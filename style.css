@@ -1,0 +1,62 @@
+/* Estilos para a barra lateral */
+.sticky-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 100vh;
+    background: #fff;
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    z-index: 1000;
+    border-left: 1px solid #ddd;
+  }
+  
+  /* Lista de navegação */
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Links individuais */
+  .nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    transform: rotate(-90deg); /* Rotaciona o texto */
+    transform-origin: center; /* Ajusta o ponto de rotação */
+    white-space: nowrap; /* Previne quebra de linha */
+    text-align: center;
+    display: inline-block;
+  }
+  
+  /* Estilo para o botão especial */
+  .nav-item.btn a {
+    background: #0056ff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    transform: rotate(-90deg); /* Mantém o botão rotacionado */
+    transform-origin: center;
+  }
+  
+  /* Hover no botão */
+  .nav-item.btn a:hover {
+    background: #003bb5;
+  }
+  
+  
+  
+  
