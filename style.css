@@ -36,8 +36,7 @@ background: radial-gradient(circle at 20% 50%,
     right: 0;
     width: 80px;
     height: 100vh;
-    background: #ffffff3c;
-    backdrop-filter: blur(2px);
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,6 +129,32 @@ line-height: normal;
   font-weight: 700;
 }
 
+.medium-body-text {
+  color: #000;
+font-family: Satoshi;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.regular-body-text {
+  color: #000;
+font-family: Satoshi;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.highlight {
+  color: #0038FF;
+font-family: Satoshi;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
   
   
   
