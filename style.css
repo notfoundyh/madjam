@@ -2,13 +2,41 @@ body {
   font-family: 'Satoshi', sans-serif;
 }
 
+@keyframes moveGradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+.background {
+background: radial-gradient(circle at 20% 50%, 
+                rgba(0, 51, 204, 0.8), 
+                rgba(255, 255, 255, 1), 
+                rgba(255, 255, 255, 0.2)), 
+                linear-gradient(to bottom right, 
+                rgba(0, 51, 204, 0.6), 
+                rgba(255, 255, 255, 1), 
+                rgba(255, 255, 255, 0.3));
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    animation: moveGradient 30s infinite ease-in-out;
+}
 .sticky-sidebar {
     position: fixed;
     top: 0;
     right: 0;
     width: 80px;
     height: 100vh;
-    background: #fff;
+    background: #ffffff3c;
     backdrop-filter: blur(2px);
     display: flex;
     flex-direction: column;
@@ -16,7 +44,6 @@ body {
     align-items: center;
     padding: 24px 0;
     z-index: 1000;
-    border-left: 1px solid #ddd;
   }
   
 
@@ -61,6 +88,48 @@ body {
     background: #003bb5;
   }
   
+  .title {
+  color: #000;
+  font-family: "Clash Display";
+  font-size: 130px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.subtitle {
+color: #0038FF;
+font-family: Satoshi;
+font-size: 34px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.agenda-section {
+  background: #0038FF;
+  min-height: 50vh;
+  position: relative;
+}
+
+
+.agenda-link {
+  font-size: 18px;
+  text-transform: uppercase;
+  transform: rotate(-10deg);
+  text-decoration: none;
+}
+
+.display-3 {
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
   
   
   
